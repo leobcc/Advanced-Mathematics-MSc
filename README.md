@@ -1,6 +1,6 @@
 # Advanced-Mathematics-MSc
 
-This repository serves as a comprehensive collection of materials for a Master's program in Advanced Mathematics. Here, you will find a wealth of resources designed to support your learning journey and provide a solid foundation in advanced mathematical concepts.
+This repository serves as a comprehensive collection of materials for a Master's program in Advanced Mathematics. Here, you will find a number of resources designed to provide a solid foundation in advanced mathematical concepts.
 
 ## About the Course
 The Master's program in Advanced Mathematics offers a rigorous and in-depth exploration of various branches of mathematics. It is tailored for students who are passionate about delving deeper into the intricacies of mathematical theory, analysis, and problem-solving. Throughout the course, you will have the opportunity to study advanced topics, engage in mathematical research, and develop critical thinking skills within the realm of mathematics.
