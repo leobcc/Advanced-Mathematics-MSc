@@ -1,0 +1,427 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     15500,        419]
+NotebookOptionsPosition[     13480,        379]
+NotebookOutlinePosition[     13884,        395]
+CellTagsIndexPosition[     13841,        392]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+COMPUTATIONAL ALGEBRA
+Spring 2023 - LAB 1\
+\>", "Title",
+ CellChangeTimes->{{3.4747765833295426`*^9, 3.4747766554242744`*^9}, {
+  3.569940664946577*^9, 3.569940692590118*^9}, {3.600503844837122*^9, 
+  3.600503845061083*^9}, {3.6336760452388573`*^9, 3.633676045389368*^9}, {
+  3.665246207211392*^9, 3.66524620736141*^9}, {3.6957210997544127`*^9, 
+  3.695721099912318*^9}, {3.727607911293166*^9, 3.727607911484603*^9}, {
+  3.7586243531477337`*^9, 3.7586243535528603`*^9}, {3.790053869186797*^9, 
+  3.790053870673201*^9}, {3.822472598801024*^9, 3.822472598955799*^9}, {
+  3.884693288556419*^9, 
+  3.8846932907524137`*^9}},ExpressionUUID->"985c8ced-8d2e-4810-af01-\
+bed2d7a1c7c3"],
+
+Cell[CellGroupData[{
+
+Cell["The \"Fer\" function", "Section",
+ CellChangeTimes->{{3.474776663144803*^9, 3.4747767121560926`*^9}, {
+  3.4747767593857217`*^9, 3.4747768609559927`*^9}},
+ FontSize->24,ExpressionUUID->"664d8e55-4ade-4e50-ae1c-97ce68c1f72a"],
+
+Cell["\<\
+1) Let \"Fer\" be the procedure defined recursively as follows: \
+\>", "Text",
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"b5459e27-9fc5-484a-a956-0c11b01f3273"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Fer", "[", "0", "]"}], ":=", "2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Fer", "[", "n_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Fer", "[", 
+    RowBox[{"n", "-", "1"}], "]"}], "*", 
+   RowBox[{"Fer", "[", 
+    RowBox[{"n", "-", "1"}], "]"}]}]}]}], "Input",
+ CellLabel->"In[45]:=",ExpressionUUID->"9653597b-3975-43a1-9227-d1bf4bcd5cd5"],
+
+Cell["\<\
+a) What does \"Fer\" compute? 
+b) Which is the algebraic complexity of \"Fer\"?
+c) It is possible the improve in a significant way this complexity, just by \
+changing one single element in the definition of \"Fer\". How?
+d) Compute the complexity of the algorithm obtained in c)
+e) Test with examples and compare  the computing time of the \"Fer\" function \
+and also of the improvement proposed.
+\
+\>", "Text",
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"25fe3e4e-0de6-45e3-a999-e352ad07d834"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Fibonacci", "Section",
+ CellChangeTimes->{{3.474776663144803*^9, 3.4747767121560926`*^9}, {
+  3.4747767593857217`*^9, 3.4747768609559927`*^9}},
+ FontSize->24,ExpressionUUID->"87567371-90d9-4a4e-b0ee-e83abd73a4d1"],
+
+Cell["\<\
+1) Let \"Fib\" be the procedure defined recursively as follows: \
+\>", "Text",
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"5949b53f-23d8-40b6-adb9-b79321c81dc5"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Fib", "[", "0", "]"}], ":=", "0"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Fib", "[", "1", "]"}], ":=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Fib", "[", "n_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Fib", "[", 
+    RowBox[{"n", "-", "1"}], "]"}], "+", 
+   RowBox[{"Fib", "[", 
+    RowBox[{"n", "-", "2"}], "]"}]}]}]}], "Input",
+ CellLabel->"In[45]:=",ExpressionUUID->"0233e177-4b06-4ebb-a9d1-4e692a0e1fef"],
+
+Cell[TextData[{
+ "a) What does \"Fib\" compute? \nb) Show that for all positive n, we have \
+Fib[n]=",
+ Cell[BoxData[
+  FractionBox[
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["S", "n"]}], "+", 
+    SuperscriptBox["T", "n"]}], 
+   SqrtBox["5"]]],ExpressionUUID->"e208845f-cc93-4e25-b5bb-ed969ea57234"],
+ ", with T=",
+ Cell[BoxData[
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     SqrtBox["5"]}], ")"}]}]],ExpressionUUID->
+  "76cd1c61-39cf-452c-8239-31b8de931c08"],
+ " and S=",
+ Cell[BoxData[
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      SqrtBox["5"]}], ")"}], "."}]}]],ExpressionUUID->
+  "d36f2b97-610d-4f05-8f3c-2a28bed6b1f1"],
+ "\nc) Show that the algebraic complexity of \"Fib\" is exponential (hint: if \
+c(n) is the number of additions needed to compute Fib[n], show that \
+c(n)=Fib[n+1]-1).\nd) Design a recursive algorithm of complexity O(n) in \
+order to compute Fib[n].\ne) Test with examples and compare the computing \
+time of \"Fib\" and of your recursive algorithm.\n"
+}], "Text",
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"231d62d1-af4f-43a9-9635-823902c7c12f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Horner", "Section",
+ CellChangeTimes->{{3.474776663144803*^9, 3.4747767121560926`*^9}, {
+  3.4747767593857217`*^9, 3.4747768609559927`*^9}},
+ FontSize->24,ExpressionUUID->"a04508b8-75d2-47c0-a7f5-9a7c25cb62bd"],
+
+Cell["\<\
+1) Let \"Calc\" be the procedure defined recursively as follows: \
+\>", "Text",
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"150984b7-0145-4072-91ca-32a86e31a9e8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Calc", "[", 
+    RowBox[{"n_", ",", "T_", ",", "x_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"u", ",", "i", ",", "s"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"u", "[", "0", "]"}], ":=", "1"}], ";", 
+      RowBox[{
+       RowBox[{"u", "[", "t_", "]"}], ":=", 
+       RowBox[{"x", "*", 
+        RowBox[{"u", "[", 
+         RowBox[{"t", "-", "1"}], "]"}]}]}], ";", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"s", "[", "0", "]"}], ":=", "0"}], ";", 
+      RowBox[{
+       RowBox[{"s", "[", "j_", "]"}], ":=", 
+       RowBox[{
+        RowBox[{"s", "[", 
+         RowBox[{"j", "-", "1"}], "]"}], "+", 
+        RowBox[{
+         RowBox[{"u", "[", 
+          RowBox[{"j", "-", "1"}], "]"}], "*", 
+         RowBox[{"T", "[", 
+          RowBox[{"[", "j", "]"}], "]"}]}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", 
+       RowBox[{"s", "[", 
+        RowBox[{"n", "+", "1"}], "]"}], "]"}], ";"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellLabel->"In[45]:=",ExpressionUUID->"09745629-dab8-4f85-a949-90b2928093bb"],
+
+Cell["\<\
+where \"n\" is a positive integer, \"T\" an array of n+1 real numbers and \"x\
+\" a real number
+a) What does \"Calc\" compute? 
+b) Show that the following procedure also computes the same:\
+\>", "Text",
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"aad90cf1-1e2d-485a-8503-27d221a3150c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Horn", "[", 
+    RowBox[{"n_", ",", "T_", ",", "x_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "s", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"s", "[", "0", "]"}], ":=", 
+       RowBox[{"T", "[", 
+        RowBox[{"[", 
+         RowBox[{"n", "+", "1"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"s", "[", "i_", "]"}], ":=", 
+       RowBox[{
+        RowBox[{"T", "[", 
+         RowBox[{"[", 
+          RowBox[{"n", "+", "1", "-", "i"}], "]"}], "]"}], "+", 
+        RowBox[{"x", "*", 
+         RowBox[{"s", "[", 
+          RowBox[{"i", "-", "1"}], "]"}]}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", 
+       RowBox[{"s", "[", "n", "]"}], "]"}], ";"}]}], "]"}]}], ";"}]], "Input",
+ CellLabel->"In[45]:=",ExpressionUUID->"4143e015-c913-41f3-84ee-c0b12e788c6e"],
+
+Cell["\<\
+c) Compare the algebraic complexity of \"Calc\" and \"Horn\"
+d) Implement a procedure which generates a random polynomial with integer \
+coefficients chosen from a given interval.
+e) With the data obtained in d), test \"Calc\" and \"Horn\" with polynomials \
+with large degrees and coefficients.\
+\>", "Text",
+ CellChangeTimes->{{3.7587871107531357`*^9, 3.758787114397283*^9}},
+ FontSize->16,
+ FontWeight->"Bold",ExpressionUUID->"b647635c-8551-4151-869e-3032bc33f5e5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Homework: Fast Multiplication, square and exponentiation (Due Friday February \
+24th)\
+\>", "Section",
+ CellChangeTimes->{{3.474776663144803*^9, 3.4747767121560926`*^9}, {
+  3.4747767593857217`*^9, 3.4747768609559927`*^9}, {3.601881766227859*^9, 
+  3.60188176825027*^9}, {3.601881812953381*^9, 3.601881817242106*^9}, {
+  3.6654589798217154`*^9, 3.665458985500721*^9}, {3.6957211354487743`*^9, 
+  3.695721139121222*^9}, {3.695722852465852*^9, 3.695722856378051*^9}, {
+  3.727607954755597*^9, 3.727607992746214*^9}, {3.758624790842523*^9, 
+  3.7586247955704107`*^9}, {3.790053899121681*^9, 3.790053932610211*^9}, {
+  3.8221074749623833`*^9, 3.822107475360396*^9}, {3.8223793060011806`*^9, 
+  3.8223793067159843`*^9}, {3.8846933622315083`*^9, 3.8846933687775803`*^9}},
+ FontSize->24,
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"7c4fb006-41b3-4330-a6e1-f556fea06e0d"],
+
+Cell[TextData[{
+ "Given a positive integer n, we consider the binary expansion of n=",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"i", "=", "1"}], "m"], 
+    RowBox[{
+     SuperscriptBox["2", "i"], " ", 
+     RowBox[{"a", "(", "i", ")"}]}]}], TraditionalForm]],ExpressionUUID->
+  "bb5689aa-2081-409f-b814-cf245c7e5dc8"],
+ ", with  a(i) either 0 or 1. Note that this is the way this number is \
+defined on a machine. The goal of this exercise is to compute x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "n"], TraditionalForm]],ExpressionUUID->
+  "fbbcbc21-fc4b-4aad-94cf-e4cc5e508276"],
+ ", with x a given real number.\na) Show that if one knows ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", 
+    SuperscriptBox["2", "i"]], TraditionalForm]],ExpressionUUID->
+  "fd331a2f-162e-4eca-993e-750a354609ff"],
+ " with i \[LessSlantEqual] m, then we can compute ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "n"], TraditionalForm]],ExpressionUUID->
+  "72dbccd0-bc19-43f0-8cde-f2ad2c39ad1b"],
+ ".\nb) Using a) and also the relation between the successive divisions of n \
+by 2 and the a(i)'s, design a recursive algorithm for computing ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "n"], TraditionalForm]],ExpressionUUID->
+  "d2f8b125-bb5a-4507-98e8-803707de438f"],
+ ".\nc) Design an iterative version for computing ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "n"], TraditionalForm]],ExpressionUUID->
+  "38d88150-6223-4b04-a743-0571bc5538af"],
+ ".\nd) Compare the algebraic complexity of these algorithms  with those \
+\"naive\" versions computing ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "n"], TraditionalForm]],ExpressionUUID->
+  "78b62123-8cb7-41b2-859e-d132696b094c"],
+ "=x*",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", 
+    RowBox[{"n", "-", "1"}]], TraditionalForm]],ExpressionUUID->
+  "5a1702aa-adf6-48b8-b5a2-023b9d535479"],
+ " (recursive case) and ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "n"], TraditionalForm]],ExpressionUUID->
+  "8f27de25-a6f3-45e8-b71d-d58b6b7102c8"],
+ " = x*x*...*x (iterative case).\ne) Test with examples your algorithms and \
+compare them with implementations of the naive versions of both the iterative \
+and recursive cases.\n\n",
+ StyleBox["Note:",
+  FontWeight->"Plain",
+  FontVariations->{"CompatibilityType"->0,
+  "Underline"->True}],
+ StyleBox[" This method has been used by Euler (1758) in a modular way in \
+order to compute ",
+  FontWeight->"Plain",
+  FontVariations->{"CompatibilityType"->0}],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "160"], TraditionalForm]],ExpressionUUID->
+  "d734c0b6-cec3-40b6-86ea-d8f185fedf1d"],
+ StyleBox[" mod 641. One can also use it for proving that the fifth Fermat \
+number ",
+  FontWeight->"Plain",
+  FontVariations->{"CompatibilityType"->0}],
+ StyleBox["Fer[5] ",
+  FontVariations->{"CompatibilityType"->0}],
+ StyleBox["is not prime by showing that ",
+  FontWeight->"Plain",
+  FontVariations->{"CompatibilityType"->0}],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["5.2", "7"], "+", " ", "1"}], " ", "=", " ", 
+    RowBox[{
+     SuperscriptBox["5", "4"], "+", 
+     SuperscriptBox["2", "4"]}]}], TraditionalForm]],ExpressionUUID->
+  "52385de4-66e0-4616-9d87-0aa90e1dcdbd"],
+ StyleBox[" divides it (this was Euler's approach in 1732). Actually,",
+  FontWeight->"Plain",
+  FontVariations->{"CompatibilityType"->0}],
+ StyleBox[" ",
+  FontVariations->{"CompatibilityType"->0}],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"Fer", "[", "5", "]"}], "+", "1"}], "=", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        SuperscriptBox["2", "8"], ")"}], "2"], ")"}], "2"]}], 
+   TraditionalForm]],ExpressionUUID->"2342a92f-6b60-4355-89cb-7463dc0a817b"],
+ StyleBox["+1",
+  FontVariations->{"CompatibilityType"->0}],
+ StyleBox[", so only two squares suffice.",
+  FontWeight->"Plain",
+  FontVariations->{"CompatibilityType"->0}]
+}], "Text",
+ CellChangeTimes->{{3.569940775250258*^9, 3.569940786455852*^9}, {
+   3.569940841907263*^9, 3.5699409412711163`*^9}, {3.569941038691655*^9, 
+   3.569941042220414*^9}, {3.569941115126144*^9, 3.5699411495111427`*^9}, {
+   3.6960630424908133`*^9, 3.6960630449945507`*^9}, {3.758787123406911*^9, 
+   3.7587871363359747`*^9}, 3.758793689092258*^9, {3.790312789378723*^9, 
+   3.790312789687943*^9}},
+ FontSize->16,
+ FontWeight->"Bold",
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"5936b036-d731-42c8-aedf-29e7f407adfd"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1439.25, 759.},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.2 para Linux x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"ArticleModern.nb",
+ExpressionUUID->"e9630e6f-0061-4436-a70f-4e29f05ebfc0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 686, 13, 139, "Title",ExpressionUUID->"985c8ced-8d2e-4810-af01-bed2d7a1c7c3"],
+Cell[CellGroupData[{
+Cell[1290, 39, 230, 3, 72, "Section",ExpressionUUID->"664d8e55-4ade-4e50-ae1c-97ce68c1f72a"],
+Cell[1523, 44, 179, 4, 28, "Text",ExpressionUUID->"b5459e27-9fc5-484a-a956-0c11b01f3273"],
+Cell[1705, 50, 378, 10, 63, "Input",ExpressionUUID->"9653597b-3975-43a1-9227-d1bf4bcd5cd5"],
+Cell[2086, 62, 512, 11, 143, "Text",ExpressionUUID->"25fe3e4e-0de6-45e3-a999-e352ad07d834"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2635, 78, 219, 3, 72, "Section",ExpressionUUID->"87567371-90d9-4a4e-b0ee-e83abd73a4d1"],
+Cell[2857, 83, 179, 4, 28, "Text",ExpressionUUID->"5949b53f-23d8-40b6-adb9-b79321c81dc5"],
+Cell[3039, 89, 459, 12, 83, "Input",ExpressionUUID->"0233e177-4b06-4ebb-a9d1-4e692a0e1fef"],
+Cell[3501, 103, 1189, 34, 153, "Text",ExpressionUUID->"231d62d1-af4f-43a9-9635-823902c7c12f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4727, 142, 216, 3, 72, "Section",ExpressionUUID->"a04508b8-75d2-47c0-a7f5-9a7c25cb62bd"],
+Cell[4946, 147, 180, 4, 28, "Text",ExpressionUUID->"150984b7-0145-4072-91ca-32a86e31a9e8"],
+Cell[5129, 153, 1167, 33, 102, "Input",ExpressionUUID->"09745629-dab8-4f85-a949-90b2928093bb"],
+Cell[6299, 188, 303, 7, 74, "Text",ExpressionUUID->"aad90cf1-1e2d-485a-8503-27d221a3150c"],
+Cell[6605, 197, 925, 25, 102, "Input",ExpressionUUID->"4143e015-c913-41f3-84ee-c0b12e788c6e"],
+Cell[7533, 224, 478, 9, 74, "Text",ExpressionUUID->"b647635c-8551-4151-869e-3032bc33f5e5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8048, 238, 886, 15, 88, "Section",ExpressionUUID->"7c4fb006-41b3-4330-a6e1-f556fea06e0d"],
+Cell[8937, 255, 4515, 120, 260, "Text",ExpressionUUID->"5936b036-d731-42c8-aedf-29e7f407adfd"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
