@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-enabled vector-feature-main-menu-pinned-disabled vector-feature-limited-width-enabled vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Convergence of Fourier series - Wikipedia</title>
+<script>document.documentElement.className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-enabled vector-feature-main-menu-pinned-disabled vector-feature-limited-width-enabled vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled";(function(){var cookie=document.cookie.match(/(?:^|; )enwikimwclientprefs=([^;]+)/);if(cookie){var featureName=cookie[1];document.documentElement.className=document.documentElement.className.replace(featureName+'-enabled',featureName+'-disabled');}}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"cfb4a108-764b-4b2c-90ae-98e2ad5df095","wgCSPNonce":false,
+"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Convergence_of_Fourier_series","wgTitle":"Convergence of Fourier series","wgCurRevisionId":1077409513,"wgRevisionId":1077409513,"wgArticleId":927236,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 French-language sources (fr)","All articles with unsourced statements","Articles with unsourced statements from February 2011","Articles with unsourced statements from February 2020","Fourier series"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Convergence_of_Fourier_series","wgRelevantArticleId":927236,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},
+"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q5166386","GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","codex-search-styles":"ready",
+"skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.echo.centralauth","ext.uls.compactlinks","ext.uls.interface","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-search-styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.41.0-wmf.15">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-crossorigin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Convergence of Fourier series - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Convergence_of_Fourier_series">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Convergence_of_Fourier_series">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Convergence_of_Fourier_series rootpage-Convergence_of_Fourier_series skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-menu vector-dropdown vector-menu-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox"
+		id="vector-main-menu-dropdown-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-vector-main-menu-dropdown"
+		class="vector-dropdown-checkbox vector-menu-checkbox "
+		
+		aria-label="Main menu"
+		
+	/>
+	<label
+		id="vector-main-menu-dropdown-label"
+		for="vector-main-menu-dropdown-checkbox"
+		class="vector-dropdown-label vector-menu-heading cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only "
+		aria-hidden="true"
+		
+	>
+		<span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+
+		<span class="vector-dropdown-label-text vector-menu-heading-label">Main menu</span>
+	</label>
+	<div class="vector-menu-content vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</div>
+
+	
+<div class="vector-main-menu-action vector-main-menu-action-lang-alert">
+	<div class="vector-main-menu-action-item">
+		<div class="vector-main-menu-action-heading vector-menu-heading">Languages</div>
+		<div class="vector-main-menu-action-content vector-menu-content">
+			<div class="mw-message-box cdx-message cdx-message--block mw-message-box-notice cdx-message--notice vector-language-sidebar-alert"><span class="cdx-message__icon"></span><div class="cdx-message__content">Language links are at the top of the page across from the title.</div></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt=""
+		aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia"
+			src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline"
+			alt="The Free Encyclopedia"
+			src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search"
+	
+		id=""
+		class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle"
+		title="Search Wikipedia [f]"accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							
+						>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Convergence+of+Fourier+series" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Convergence+of+Fourier+series" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-menu vector-dropdown vector-menu-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox"
+		id="vector-user-links-dropdown-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-vector-user-links-dropdown"
+		class="vector-dropdown-checkbox vector-menu-checkbox "
+		
+		aria-label="Personal tools"
+		
+	/>
+	<label
+		id="vector-user-links-dropdown-label"
+		for="vector-user-links-dropdown-checkbox"
+		class="vector-dropdown-label vector-menu-heading cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only "
+		aria-hidden="true"
+		
+	>
+		<span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+
+		<span class="vector-dropdown-label-text vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Convergence+of+Fourier+series" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Convergence+of+Fourier+series" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li></ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li></ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-main-menu-container ">
+			<div id="mw-navigation">
+				<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+					<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<input type="checkbox" id="vector-toc-collapsed-checkbox" class="vector-menu-checkbox">
+		<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+			<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Preliminaries"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Preliminaries">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Preliminaries</div>
+		</a>
+		
+		<ul id="toc-Preliminaries-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Magnitude_of_Fourier_coefficients"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Magnitude_of_Fourier_coefficients">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Magnitude of Fourier coefficients</div>
+		</a>
+		
+		<ul id="toc-Magnitude_of_Fourier_coefficients-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Pointwise_convergence"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Pointwise_convergence">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Pointwise convergence</div>
+		</a>
+		
+		<ul id="toc-Pointwise_convergence-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Uniform_convergence"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Uniform_convergence">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Uniform convergence</div>
+		</a>
+		
+		<ul id="toc-Uniform_convergence-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Absolute_convergence"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Absolute_convergence">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>Absolute convergence</div>
+		</a>
+		
+		<ul id="toc-Absolute_convergence-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Norm_convergence"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Norm_convergence">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">6</span>Norm convergence</div>
+		</a>
+		
+		<ul id="toc-Norm_convergence-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Convergence_almost_everywhere"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Convergence_almost_everywhere">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">7</span>Convergence almost everywhere</div>
+		</a>
+		
+		<ul id="toc-Convergence_almost_everywhere-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Summability"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Summability">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">8</span>Summability</div>
+		</a>
+		
+		<ul id="toc-Summability-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Order_of_growth"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Order_of_growth">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">9</span>Order of growth</div>
+		</a>
+		
+		<ul id="toc-Order_of_growth-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Multiple_dimensions"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Multiple_dimensions">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">10</span>Multiple dimensions</div>
+		</a>
+		
+		<ul id="toc-Multiple_dimensions-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Notes"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Notes">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">11</span>Notes</div>
+		</a>
+		
+		<ul id="toc-Notes-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">12</span>References</div>
+		</a>
+		
+			<button aria-controls="toc-References-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle References subsection</span>
+			</button>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+			<li id="toc-Textbooks"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Textbooks">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">12.1</span>Textbooks</div>
+			</a>
+			
+			<ul id="toc-Textbooks-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Articles_referred_to_in_the_text"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Articles_referred_to_in_the_text">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">12.2</span>Articles referred to in the text</div>
+			</a>
+			
+			<ul id="toc-Articles_referred_to_in_the_text-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+			</div>
+		</nav>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<label
+						id="vector-toc-collapsed-button"
+						class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet vector-button-flush-left cdx-button--icon-only"
+						for="vector-toc-collapsed-checkbox"
+						role="button"
+						aria-controls="vector-toc"
+						tabindex="0"
+						title="Table of Contents">
+						<span class="vector-icon mw-ui-icon-wikimedia-listBullet"></span>
+						<span>Toggle the table of contents</span>
+					</label>
+				
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-menu vector-dropdown vector-menu-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox"
+		id="vector-page-titlebar-toc-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-vector-page-titlebar-toc"
+		class="vector-dropdown-checkbox vector-menu-checkbox "
+		
+		aria-label="Toggle the table of contents"
+		
+	/>
+	<label
+		id="vector-page-titlebar-toc-label"
+		for="vector-page-titlebar-toc-checkbox"
+		class="vector-dropdown-label vector-menu-heading cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only "
+		aria-hidden="true"
+		
+	>
+		<span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+
+		<span class="vector-dropdown-label-text vector-menu-heading-label">Toggle the table of contents</span>
+	</label>
+	<div class="vector-menu-content vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Convergence of Fourier series</span></h1>
+				
+							
+<div id="p-lang-btn" class="vector-menu vector-dropdown vector-menu-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox"
+		id="p-lang-btn-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-lang-btn"
+		class="vector-dropdown-checkbox vector-menu-checkbox mw-interlanguage-selector"
+		aria-label="Go to an article in another language. Available in 2 languages"
+		
+		
+	/>
+	<label
+		id="p-lang-btn-label"
+		for="p-lang-btn-checkbox"
+		class="vector-dropdown-label vector-menu-heading cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-2"
+		aria-hidden="true"
+		
+	>
+		<span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+
+		<span class="vector-dropdown-label-text vector-menu-heading-label">2 languages</span>
+	</label>
+	<div class="vector-menu-content vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%82%D8%A7%D8%B1%D8%A8_%D9%85%D8%AA%D8%B3%D9%84%D8%B3%D9%84%D8%A9_%D9%81%D9%88%D8%B1%D9%8A%D9%8A%D9%87" title="تقارب متسلسلة فورييه – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F" title="フーリエ級数の収束 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li></ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5166386#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+				</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a data-mw="interface" href="/wiki/Convergence_of_Fourier_series" title="View the content page [c]" accesskey="c" class=""><span>Article</span></a>
+</li>
+<li id="ca-talk" class="vector-tab-noicon mw-list-item"><a data-mw="interface" href="/wiki/Talk:Convergence_of_Fourier_series" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t" class=""><span>Talk</span></a>
+</li>
+
+		</ul>
+		
+	</div>
+</div>
+
+								
+
+<div id="p-variants" class="vector-menu vector-dropdown vector-menu-dropdown mw-portlet mw-portlet-variants emptyPortlet"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-dropdown-checkbox vector-menu-checkbox"
+		aria-label="Change language variant"
+		
+		
+	/>
+	<label
+		id="p-variants-label"
+		for="p-variants-checkbox"
+		class="vector-dropdown-label vector-menu-heading "
+		aria-hidden="true"
+		
+	>
+		
+		<span class="vector-dropdown-label-text vector-menu-heading-label">English</span>
+	</label>
+	<div class="vector-menu-content vector-dropdown-content">
+
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+
+	</div>
+</div>
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a data-mw="interface" href="/wiki/Convergence_of_Fourier_series" class=""><span>Read</span></a>
+</li>
+<li id="ca-edit" class="vector-tab-noicon mw-list-item"><a data-mw="interface" href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span>Edit</span></a>
+</li>
+<li id="ca-history" class="vector-tab-noicon mw-list-item"><a data-mw="interface" href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span>View history</span></a>
+</li>
+
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="More options">
+								
+<div id="vector-page-tools-dropdown" class="vector-menu vector-dropdown vector-menu-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox"
+		id="vector-page-tools-dropdown-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-vector-page-tools-dropdown"
+		class="vector-dropdown-checkbox vector-menu-checkbox "
+		
+		aria-label="Tools"
+		
+	/>
+	<label
+		id="vector-page-tools-dropdown-label"
+		for="vector-page-tools-dropdown-checkbox"
+		class="vector-dropdown-label vector-menu-heading cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet"
+		aria-hidden="true"
+		
+	>
+		
+		<span class="vector-dropdown-label-text vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Convergence_of_Fourier_series"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=history"><span>View history</span></a></li></ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Convergence_of_Fourier_series" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Convergence_of_Fourier_series" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;oldid=1077409513" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Convergence_of_Fourier_series&amp;id=1077409513&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5166386" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Convergence_of_Fourier_series&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="More options">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, the question of whether the <a href="/wiki/Fourier_series" title="Fourier series">Fourier series</a> of a <a href="/wiki/Periodic_function" title="Periodic function">periodic function</a> <a href="/wiki/Convergent_series" title="Convergent series">converges</a> to a given <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> is researched by a field known as <b>classical harmonic analysis</b>, a branch of <a href="/wiki/Pure_mathematics" title="Pure mathematics">pure mathematics</a>. Convergence is not necessarily given in the general case, and certain criteria must be met for convergence to occur.
+</p><p>Determination of convergence requires the comprehension of <a href="/wiki/Pointwise_convergence" title="Pointwise convergence">pointwise convergence</a>, <a href="/wiki/Uniform_convergence" title="Uniform convergence">uniform convergence</a>, <a href="/wiki/Absolute_convergence" title="Absolute convergence">absolute convergence</a>, <a href="/wiki/Lp_space" title="Lp space"><i>L</i><sup><i>p</i></sup> spaces</a>, <a href="/wiki/Summability_method" class="mw-redirect" title="Summability method">summability methods</a> and the <a href="/wiki/Ces%C3%A0ro_mean" class="mw-redirect" title="Cesàro mean">Cesàro mean</a>.
+</p>
+<meta property="mw:PageProp/toc" />
+<h2><span class="mw-headline" id="Preliminaries">Preliminaries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=1" title="Edit section: Preliminaries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Consider <i>f</i> an <a href="/wiki/Lebesgue_integration" title="Lebesgue integration">integrable</a> function on the interval <span class="texhtml">&#91;0, 2<i>π</i>&#93;</span>. For such an <i>f</i> the <b>Fourier coefficients</b> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\widehat {f}}(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\widehat {f}}(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dcbd99c1d4c40b9ec9b6ff640ee2d48f16a92e07" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.975ex; height:3.509ex;" alt="\widehat{f}(n)"></span> are defined by the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\widehat {f}}(n)={\frac {1}{2\pi }}\int _{0}^{2\pi }f(t)e^{-int}\,\mathrm {d} t,\quad n\in \mathbb {Z} .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>&#x03C0;<!-- π --></mi>
+          </mrow>
+        </msubsup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>i</mi>
+            <mi>n</mi>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <mi>n</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\widehat {f}}(n)={\frac {1}{2\pi }}\int _{0}^{2\pi }f(t)e^{-int}\,\mathrm {d} t,\quad n\in \mathbb {Z} .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4095298999332236dc3145e573760b6612cbd6d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:37.616ex; height:6.176ex;" alt="{\displaystyle {\widehat {f}}(n)={\frac {1}{2\pi }}\int _{0}^{2\pi }f(t)e^{-int}\,\mathrm {d} t,\quad n\in \mathbb {Z} .}"></span></dd></dl>
+<p>It is common to describe the connection between <i>f</i> and its Fourier series by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f\sim \sum _{n}{\widehat {f}}(n)e^{int}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>&#x223C;<!-- ∼ --></mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>n</mi>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\sim \sum _{n}{\widehat {f}}(n)e^{int}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a13c605523e3d40336097b086dbbde9195619757" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:17.204ex; height:5.676ex;" alt="{\displaystyle f\sim \sum _{n}{\widehat {f}}(n)e^{int}.}"></span></dd></dl>
+<p>The notation ~ here means that the sum represents the function in some sense. To investigate this more carefully, the partial sums must be defined:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}(f;t)=\sum _{n=-N}^{N}{\widehat {f}}(n)e^{int}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>N</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>n</mi>
+            <mi>t</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}(f;t)=\sum _{n=-N}^{N}{\widehat {f}}(n)e^{int}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb22b90d0e88b5735cf4d82bc8ebdc472e10bf72" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:25.651ex; height:7.509ex;" alt="{\displaystyle S_{N}(f;t)=\sum _{n=-N}^{N}{\widehat {f}}(n)e^{int}.}"></span></dd></dl>
+<p>The question of whether a Fourier series converges is: Do the functions <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}(f)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}(f)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72695d75fddb76884ba18897a0be93e975d70e92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.204ex; height:2.843ex;" alt="S_N(f)"></span> (which are functions of the variable <i>t</i> we omitted in the notation) converge to <i>f</i> and in which sense? Are there conditions on <i>f</i> ensuring this or that type of convergence?
+</p><p>Before continuing, the <a href="/wiki/Dirichlet_kernel" title="Dirichlet kernel">Dirichlet kernel</a> must be introduced. Taking the formula for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\widehat {f}}(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\widehat {f}}(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dcbd99c1d4c40b9ec9b6ff640ee2d48f16a92e07" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.975ex; height:3.509ex;" alt="\widehat{f}(n)"></span>, inserting it into the formula for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aca805f5a6c6548a825d119230ab751152321ff1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.116ex; height:2.509ex;" alt="S_N"></span> and doing some algebra gives that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}(f)=f*D_{N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}(f)=f*D_{N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f228c2c7cda076743e6a4f9676077fee4cfef415" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.392ex; height:2.843ex;" alt="{\displaystyle S_{N}(f)=f*D_{N}}"></span></dd></dl>
+<p>where ∗ stands for the periodic <a href="/wiki/Convolution" title="Convolution">convolution</a> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/69fcf2425a1e9f9ef9979b837f32bdfbcd4beff5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.616ex; height:2.509ex;" alt="D_N"></span> is the Dirichlet kernel, which has an explicit formula,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{n}(t)={\frac {\sin((n+{\frac {1}{2}})t)}{\sin(t/2)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mn>1</mn>
+                  <mn>2</mn>
+                </mfrac>
+              </mrow>
+              <mo stretchy="false">)</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mn>2</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{n}(t)={\frac {\sin((n+{\frac {1}{2}})t)}{\sin(t/2)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b58a091876bc5307f6587eebfd47ee63f6a4b4f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:23.58ex; height:7.176ex;" alt="D_n(t)=\frac{\sin((n+\frac{1}{2})t)}{\sin(t/2)}."></span></dd></dl>
+<p>The Dirichlet kernel is <i>not</i> a positive kernel, and in fact, its norm diverges, namely
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int |D_{n}(t)|\,\mathrm {d} t\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x222B;<!-- ∫ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int |D_{n}(t)|\,\mathrm {d} t\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6870d500893572edd0169fcfa887878d37468048" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:18.123ex; height:5.676ex;" alt="{\displaystyle \int |D_{n}(t)|\,\mathrm {d} t\to \infty }"></span></dd></dl>
+<p>a fact that plays a crucial role in the discussion.  The norm of <i>D</i><sub><i>n</i></sub> in <i>L</i><sup>1</sup>(<b>T</b>) coincides with the norm of the convolution operator with <i>D</i><sub><i>n</i></sub>,
+acting on the space <i>C</i>(<b>T</b>) of periodic continuous functions, or with the norm of the linear functional <i>f</i>&#160;→ (<i>S</i><sub><i>n</i></sub><i>f</i>)(0) on <i>C</i>(<b>T</b>).  Hence, this family of linear functionals on <i>C</i>(<b>T</b>) is unbounded, when <i>n</i>&#160;→&#160;∞.
+</p>
+<h2><span class="mw-headline" id="Magnitude_of_Fourier_coefficients">Magnitude of Fourier coefficients</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=2" title="Edit section: Magnitude of Fourier coefficients">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In applications, it is often useful to know the size of the Fourier coefficient.
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> is an <a href="/wiki/Absolutely_continuous" class="mw-redirect" title="Absolutely continuous">absolutely continuous</a> function,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\widehat {f}}(n)\right|\leq {K \over |n|}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo>&#x005E;<!-- ^ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>K</mi>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\widehat {f}}(n)\right|\leq {K \over |n|}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fb218432e5a942ef0d3fffa7af406286fec8dc57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:12.892ex; height:6.009ex;" alt="\left|\widehat f(n)\right|\le {K \over |n|}"></span></dd></dl>
+<p>for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span> a constant that only depends on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span>.
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> is a <a href="/wiki/Bounded_variation" title="Bounded variation">bounded variation</a> function,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\widehat {f}}(n)\right|\leq {{\rm {var}}(f) \over 2\pi |n|}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo>&#x005E;<!-- ^ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">v</mi>
+                  <mi mathvariant="normal">a</mi>
+                  <mi mathvariant="normal">r</mi>
+                </mrow>
+              </mrow>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\widehat {f}}(n)\right|\leq {{\rm {var}}(f) \over 2\pi |n|}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd87fadb51e4d154b3d0c5bb2b852062006219ba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:17.24ex; height:6.509ex;" alt="\left|\widehat f(n)\right|\le {{\rm var}(f)\over 2\pi|n|}."></span></dd></dl>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f\in C^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\in C^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3fa1044a6b6e8dfafccc7525548218feb950345b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.976ex; height:2.676ex;" alt="f\in C^p"></span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\widehat {f}}(n)\right|\leq {\|f^{(p)}\|_{L_{1}} \over |n|^{p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo>&#x005E;<!-- ^ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+              <msup>
+                <mi>f</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <msub>
+                <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msub>
+                    <mi>L</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>n</mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>p</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\widehat {f}}(n)\right|\leq {\|f^{(p)}\|_{L_{1}} \over |n|^{p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7336af1b6dbb74341895bfa07b4c78c9b005ce7c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:19.017ex; height:6.843ex;" alt="\left|\widehat{f}(n)\right|\le {\| f^{(p)}\|_{L_1}\over |n|^p}."></span></dd></dl>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f\in C^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\in C^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3fa1044a6b6e8dfafccc7525548218feb950345b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.976ex; height:2.676ex;" alt="f\in C^p"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f^{(p)}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>p</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{(p)}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47b0b2f1fe2ac5e24115c8de36089fed82dae79c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.659ex; height:3.176ex;" alt="f^{(p)}"></span> has <a href="/wiki/Modulus_of_continuity" title="Modulus of continuity">modulus of continuity</a><sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2011)">citation needed</span></a></i>&#93;</sup><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/03e5bac876eaf90d1ef45de136723aa1c2838b32" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.505ex; height:2.343ex;" alt="\omega _{p}"></span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\widehat {f}}(n)\right|\leq {\omega (2\pi /n) \over |n|^{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo>&#x005E;<!-- ^ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03C9;<!-- ω --></mi>
+              <mo stretchy="false">(</mo>
+              <mn>2</mn>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>n</mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>p</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\widehat {f}}(n)\right|\leq {\omega (2\pi /n) \over |n|^{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f8536f614f9039f3fdac8a8f8a18e6d2c62ce16c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:18.51ex; height:6.509ex;" alt="\left|\widehat{f}(n)\right|\le {\omega(2\pi/n)\over |n|^p} "></span></dd></dl>
+<p>and therefore, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> is in the α-<a href="/wiki/H%C3%B6lder_class" class="mw-redirect" title="Hölder class">Hölder class</a>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left|{\widehat {f}}(n)\right|\leq {K \over |n|^{\alpha }}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>f</mi>
+                  <mo>&#x005E;<!-- ^ --></mo>
+                </mover>
+              </mrow>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>K</mi>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>n</mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>&#x03B1;<!-- α --></mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left|{\widehat {f}}(n)\right|\leq {K \over |n|^{\alpha }}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0aef3954a68a3911fd2c105053adc7e37a1eb310" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:14.823ex; height:6.009ex;" alt="\left|\widehat{f}(n)\right|\le {K\over |n|^\alpha}."></span></dd></dl>
+<h2><span class="mw-headline" id="Pointwise_convergence">Pointwise convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=3" title="Edit section: Pointwise convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:282px;"><a href="/wiki/File:Sawtooth_Fourier_Analysis.JPG" class="image"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sawtooth_Fourier_Analysis.JPG/280px-Sawtooth_Fourier_Analysis.JPG" decoding="async" width="280" height="270" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sawtooth_Fourier_Analysis.JPG/420px-Sawtooth_Fourier_Analysis.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sawtooth_Fourier_Analysis.JPG/560px-Sawtooth_Fourier_Analysis.JPG 2x" data-file-width="565" data-file-height="545" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Sawtooth_Fourier_Analysis.JPG" class="internal" title="Enlarge"></a></div>Superposition of sinusoidal wave basis functions (bottom) to form a sawtooth wave (top); the basis functions have <a href="/wiki/Wavelength" title="Wavelength">wavelengths</a> λ/<i>k</i> (<i>k</i>=integer) shorter than the wavelength λ of the sawtooth itself (except for <i>k</i>=1). All basis functions have nodes at the nodes of the sawtooth, but all but the fundamental have additional nodes. The oscillation about the sawtooth is called the <a href="/wiki/Gibbs_phenomenon" title="Gibbs phenomenon">Gibbs phenomenon</a></div></div></div>
+<p>There are many known sufficient conditions for the Fourier series of a function to converge at a given point <i>x</i>, for example if the function is <a href="/wiki/Differentiable_function" title="Differentiable function">differentiable</a> at <i>x</i>. Even a jump discontinuity does not pose a problem: if the function has left and right derivatives at <i>x</i>, then the Fourier series converges to the average of the left and right limits (but see <a href="/wiki/Gibbs_phenomenon" title="Gibbs phenomenon">Gibbs phenomenon</a>).
+</p><p>The <b>Dirichlet–Dini Criterion</b> states that: if <i>ƒ</i> is 2<span class="texhtml mvar" style="font-style:italic;">π</span>–periodic, locally integrable and satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int _{0}^{\pi }\left|{\frac {f(x_{0}+t)+f(x_{0}-t)}{2}}-\ell \right|{\frac {\mathrm {d} t}{t}}&lt;\infty ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03C0;<!-- π --></mi>
+          </mrow>
+        </msubsup>
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>f</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo>+</mo>
+                  <mi>f</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>&#x2113;<!-- ℓ --></mi>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <mi>t</mi>
+            </mrow>
+            <mi>t</mi>
+          </mfrac>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int _{0}^{\pi }\left|{\frac {f(x_{0}+t)+f(x_{0}-t)}{2}}-\ell \right|{\frac {\mathrm {d} t}{t}}&lt;\infty ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f78991640e6f582372704cf2be0b1c6f4fe7a95c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:40.534ex; height:6.509ex;" alt="{\displaystyle \int _{0}^{\pi }\left|{\frac {f(x_{0}+t)+f(x_{0}-t)}{2}}-\ell \right|{\frac {\mathrm {d} t}{t}}&lt;\infty ,}"></span></dd></dl>
+<p>then (S<sub><i>n</i></sub><i>f</i>)(<i>x</i><sub>0</sub>) converges to ℓ.  This implies that for any function <i>f</i> of any <a href="/wiki/H%C3%B6lder_condition" title="Hölder condition">Hölder class</a> <i>α</i>&#160;&gt; 0,  the Fourier series converges everywhere to <i>f</i>(<i>x</i>).
+</p><p>It is also known that for any periodic function of <a href="/wiki/Bounded_variation" title="Bounded variation">bounded variation</a>, the Fourier series converges everywhere. See also <a href="/wiki/Dini_test" title="Dini test">Dini test</a>.
+In general, the most common criteria for pointwise convergence of a periodic function <i>f</i> are as follows:
+</p>
+<ul><li>If <i>f</i> satisfies a Holder condition, then its Fourier series converges uniformly.</li>
+<li>If <i>f</i> is of bounded variation, then its Fourier series converges everywhere.</li>
+<li>If <i>f</i> is continuous and its Fourier coefficients are absolutely summable, then the Fourier series converges uniformly.</li></ul>
+<p>There exist continuous functions whose Fourier series converges pointwise but not uniformly; see Antoni Zygmund, <i><a href="/wiki/Trigonometric_Series" title="Trigonometric Series">Trigonometric Series</a></i>, vol. 1, Chapter 8, Theorem 1.13, p.&#160;300.
+</p><p>However, the Fourier series of a <a href="/wiki/Continuous_function" title="Continuous function">continuous function</a> need not converge pointwise. Perhaps the easiest proof  uses the non-boundedness of Dirichlet's kernel in <i>L</i><sup>1</sup>(<b>T</b>) and the Banach–Steinhaus <a href="/wiki/Uniform_boundedness_principle" title="Uniform boundedness principle">uniform boundedness principle</a>. As typical for existence arguments invoking the <a href="/wiki/Baire_category_theorem" title="Baire category theorem">Baire category theorem</a>, this proof is nonconstructive. It shows that the family of continuous functions whose Fourier series converges at a given <i>x</i> is of <a href="/wiki/Baire_space" title="Baire space">first Baire category</a>, in the <a href="/wiki/Banach_space" title="Banach space">Banach space</a> of continuous functions on the circle. 
+</p><p>So in some sense pointwise convergence is <i>atypical</i>, and for most continuous functions the Fourier series does not converge at a given point. However <a href="/wiki/Carleson%27s_theorem" title="Carleson&#39;s theorem">Carleson's theorem</a> shows that for a given continuous function the Fourier series converges almost everywhere.
+</p><p>It is also possible to give explicit examples of a continuous function whose Fourier series diverges at 0: for instance, the even and 2π-periodic function <i>f</i> defined for all <i>x</i> in [0,π] by<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(x)=\sum _{n=1}^{\infty }{\frac {1}{n^{2}}}\sin \left[\left(2^{n^{3}}+1\right){\frac {x}{2}}\right].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>n</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>x</mi>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=\sum _{n=1}^{\infty }{\frac {1}{n^{2}}}\sin \left[\left(2^{n^{3}}+1\right){\frac {x}{2}}\right].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a8707621c87adf54eadc1389a9b18497c22a437d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:33.171ex; height:6.843ex;" alt="{\displaystyle f(x)=\sum _{n=1}^{\infty }{\frac {1}{n^{2}}}\sin \left[\left(2^{n^{3}}+1\right){\frac {x}{2}}\right].}"></span></dd></dl>
+<h2><span class="mw-headline" id="Uniform_convergence">Uniform convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=4" title="Edit section: Uniform convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Suppose <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f\in C^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\in C^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3fa1044a6b6e8dfafccc7525548218feb950345b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.976ex; height:2.676ex;" alt="f\in C^p"></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f^{(p)}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>p</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{(p)}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47b0b2f1fe2ac5e24115c8de36089fed82dae79c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.659ex; height:3.176ex;" alt="f^{(p)}"></span> has <a href="/wiki/Modulus_of_continuity" title="Modulus of continuity">modulus of continuity</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C9;<!-- ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48eff443f9de7a985bb94ca3bde20813ea737be8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.446ex; height:1.676ex;" alt="\omega "></span>; then the partial sums of the Fourier series converge to the function with speed<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f(x)-(S_{N}f)(x)|\leq K{\ln N \over N^{p}}\omega (2\pi /N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>K</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>ln</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>N</mi>
+            </mrow>
+            <msup>
+              <mi>N</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f(x)-(S_{N}f)(x)|\leq K{\ln N \over N^{p}}\omega (2\pi /N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/11613d96fcc6ff2405d89bc2df1b53a5e49c4359" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:37.261ex; height:5.343ex;" alt="|f(x)-(S_Nf)(x)|\le K {\ln N \over N^p}\omega(2\pi/N)"></span></dd></dl>
+<p>for a constant <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span> that does not depend upon <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span>, nor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span>,  nor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5e3890c981ae85503089652feb48b191b57aae3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.064ex; height:2.176ex;" alt="N"></span>.
+</p><p>This theorem, first proved by D Jackson, tells, for example,  that if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> satisfies the  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B1;<!-- α --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;" alt="\alpha "></span>-<a href="/wiki/H%C3%B6lder_condition" title="Hölder condition">Hölder condition</a>, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle |f(x)-(S_{N}f)(x)|\leq K{\ln N \over N^{\alpha }}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>K</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>ln</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>N</mi>
+            </mrow>
+            <msup>
+              <mi>N</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B1;<!-- α --></mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |f(x)-(S_{N}f)(x)|\leq K{\ln N \over N^{\alpha }}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b3fd1b1f6b2681dc7055eaa60b4896e65dff1584" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:28.932ex; height:5.343ex;" alt="|f(x)-(S_Nf)(x)|\le K {\ln N\over N^\alpha}."></span></dd></dl>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2\pi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\pi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73efd1f6493490b058097060a572606d2c550a06" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.494ex; height:2.176ex;" alt="2\pi "></span> periodic and absolutely continuous on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle [0,2\pi ]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [0,2\pi ]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/348d40bf3f8b7e1c00c4346440d7e2e4f0cc9b91" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.985ex; height:2.843ex;" alt="[0,2\pi]"></span>, then the Fourier series of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> converges uniformly, but not necessarily absolutely, to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Absolute_convergence">Absolute convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=5" title="Edit section: Absolute convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A function <i>ƒ</i> has an <a href="/wiki/Absolute_convergence" title="Absolute convergence">absolutely converging</a> Fourier series if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|f\|_{A}:=\sum _{n=-\infty }^{\infty }|{\widehat {f}}(n)|&lt;\infty .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo>:=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|f\|_{A}:=\sum _{n=-\infty }^{\infty }|{\widehat {f}}(n)|&lt;\infty .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a818555706606604501f1ed5662d430c4516389" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.725ex; height:6.843ex;" alt="\|f\|_A:=\sum_{n=-\infty}^\infty |\widehat{f}(n)|&lt;\infty."></span></dd></dl>
+<p>Obviously, if this condition holds then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (S_{N}f)(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (S_{N}f)(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3256b1cfd09b13597751bc820e3e57497d53a81e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.853ex; height:2.843ex;" alt="(S_N f)(t)"></span> converges absolutely for every <i>t</i> and on the other hand, it is enough that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (S_{N}f)(t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (S_{N}f)(t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3256b1cfd09b13597751bc820e3e57497d53a81e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.853ex; height:2.843ex;" alt="(S_N f)(t)"></span> converges absolutely for even one <i>t</i>, then this
+condition holds. In other words, for absolute convergence there is no issue of <i>where</i> the sum converges absolutely&#160;— if it converges absolutely at one point then it does so everywhere.
+</p><p>The family of all functions with absolutely converging Fourier series is a <a href="/wiki/Banach_algebra" title="Banach algebra">Banach algebra</a> (the operation of multiplication in the algebra is a simple multiplication of functions). It is called the <a href="/wiki/Wiener_algebra" title="Wiener algebra">Wiener algebra</a>, after <a href="/wiki/Norbert_Wiener" title="Norbert Wiener">Norbert Wiener</a>, who proved that if <i>ƒ</i> has absolutely converging Fourier
+series and is never zero, then 1/<i>ƒ</i> has absolutely converging Fourier series. The original proof of Wiener's theorem was difficult; a simplification using the theory of Banach algebras was given by <a href="/wiki/Israel_Gelfand" title="Israel Gelfand">Israel Gelfand</a>. Finally,  a short elementary proof was given by <a href="/wiki/Donald_J._Newman" title="Donald J. Newman">Donald J. Newman</a> in 1975.
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> belongs to a α-Hölder class for α&#160;&gt; 1/2 then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|f\|_{A}\leq c_{\alpha }\|f\|_{{\rm {Lip}}_{\alpha }},\qquad \|f\|_{K}:=\sum _{n=-\infty }^{+\infty }|n||{\widehat {f}}(n)|^{2}\leq c_{\alpha }\|f\|_{{\rm {Lip}}_{\alpha }}^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">L</mi>
+                  <mi mathvariant="normal">i</mi>
+                  <mi mathvariant="normal">p</mi>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B1;<!-- α --></mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>K</mi>
+          </mrow>
+        </msub>
+        <mo>:=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>+</mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msubsup>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">L</mi>
+                  <mi mathvariant="normal">i</mi>
+                  <mi mathvariant="normal">p</mi>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B1;<!-- α --></mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|f\|_{A}\leq c_{\alpha }\|f\|_{{\rm {Lip}}_{\alpha }},\qquad \|f\|_{K}:=\sum _{n=-\infty }^{+\infty }|n||{\widehat {f}}(n)|^{2}\leq c_{\alpha }\|f\|_{{\rm {Lip}}_{\alpha }}^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3cc6ddbd78a75588593a043389eb327ae2d137bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:60.658ex; height:7.176ex;" alt="\|f\|_A\le c_\alpha \|f\|_{{\rm Lip}_\alpha},\qquad&#10;\|f\|_K:=\sum_{n=-\infty}^{+\infty} |n| |\widehat{f}(n)|^2\le  c_\alpha \|f\|^2_{{\rm Lip}_\alpha}"></span></dd></dl>
+<p>for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|f\|_{{\rm {Lip}}_{\alpha }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">L</mi>
+                  <mi mathvariant="normal">i</mi>
+                  <mi mathvariant="normal">p</mi>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B1;<!-- α --></mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|f\|_{{\rm {Lip}}_{\alpha }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/456ed3d571ce840eb3f095a10fc9c43af0195f63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:7.253ex; height:3.009ex;" alt="\|f\|_{{\rm Lip}_\alpha}"></span> the constant in the
+<a href="/wiki/H%C3%B6lder_condition" title="Hölder condition">Hölder condition</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle c_{\alpha }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{\alpha }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6dcb7aadbcfa0ea1be48b6d5e135843344acbc3c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.291ex; height:2.009ex;" alt="c_{\alpha }"></span> a constant only dependent on  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B1;<!-- α --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;" alt="\alpha "></span>; <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \|f\|_{K}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+        <mi>f</mi>
+        <msub>
+          <mo fence="false" stretchy="false">&#x2016;<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>K</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \|f\|_{K}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/baa6bc57bbe486204e76bf64dd7142da1b749502" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.297ex; height:2.843ex;" alt="\|f\|_K"></span> is the norm of the Krein algebra.  Notice that the 1/2 here is essential—there are 1/2-Hölder functions, which do not belong to the Wiener algebra. Besides, this theorem cannot improve the best known bound on the size of the Fourier coefficient of a α-Hölder function—that is only <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(1/n^{\alpha })}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>&#x03B1;<!-- α --></mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(1/n^{\alpha })}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f514a004b2cae65b763f8888e4108db35daefba6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.586ex; height:2.843ex;" alt="O(1/n^\alpha)"></span> and then not summable.
+</p><p>If <i>ƒ</i> is of <a href="/wiki/Bounded_variation" title="Bounded variation">bounded variation</a> <i>and</i> belongs to a α-Hölder class for some α&#160;&gt;&#160;0, it belongs to the Wiener algebra.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2020)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h2><span class="mw-headline" id="Norm_convergence">Norm convergence</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=6" title="Edit section: Norm convergence">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The simplest case is that of <a href="/wiki/Lp_space" title="Lp space"><i>L</i><sup>2</sup></a>, which is a direct transcription of general <a href="/wiki/Hilbert_space" title="Hilbert space">Hilbert space</a> results. According to the <a href="/wiki/Riesz%E2%80%93Fischer_theorem" title="Riesz–Fischer theorem">Riesz–Fischer theorem</a>, if <i>ƒ</i> is <a href="/wiki/Square-integrable" class="mw-redirect" title="Square-integrable">square-integrable</a> then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{N\rightarrow \infty }\int _{0}^{2\pi }\left|f(x)-S_{N}(f)(x)\right|^{2}\,\mathrm {d} x=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>&#x03C0;<!-- π --></mi>
+          </mrow>
+        </msubsup>
+        <msup>
+          <mrow>
+            <mo>|</mo>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>N</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo stretchy="false">)</mo>
+              <mo stretchy="false">(</mo>
+              <mi>x</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mo>|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{N\rightarrow \infty }\int _{0}^{2\pi }\left|f(x)-S_{N}(f)(x)\right|^{2}\,\mathrm {d} x=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8cc5bddaebe94fcc5ae68e23544560702a0e2aa2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:36.199ex; height:6.176ex;" alt="{\displaystyle \lim _{N\rightarrow \infty }\int _{0}^{2\pi }\left|f(x)-S_{N}(f)(x)\right|^{2}\,\mathrm {d} x=0}"></span></dd></dl>
+<p><i>i.e.</i>,  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef9ed3715cf0575aaee08ba87024be3959b8eec7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.395ex; height:2.509ex;" alt="S_N f"></span> converges to <i>ƒ</i> in the norm of <i>L</i><sup>2</sup>. It is easy to see that the converse is also true: if the limit above is zero, <i>ƒ</i> must be in <i>L</i><sup>2</sup>. So this is an <a href="/wiki/If_and_only_if" title="If and only if">if and only if</a> condition.
+</p><p>If 2 in the exponents above is replaced with some <i>p</i>, the question becomes much harder. It turns out that the convergence still holds if 1&#160;&lt; <i>p</i>&#160;&lt; ∞.  In other words, for <i>ƒ</i> in <a href="/wiki/Lp_space" title="Lp space"><i>L</i><sup>p</sup></a>,  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}(f)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}(f)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72695d75fddb76884ba18897a0be93e975d70e92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.204ex; height:2.843ex;" alt="S_N(f)"></span> converges to <i>ƒ</i> in the <i>L</i><sup><i>p</i></sup> norm. The original proof uses properties of <a href="/wiki/Holomorphic_function" title="Holomorphic function">holomorphic functions</a> and <a href="/wiki/Hardy_space" title="Hardy space">Hardy spaces</a>, and another proof, due to <a href="/wiki/Salomon_Bochner" title="Salomon Bochner">Salomon Bochner</a> relies upon the <a href="/wiki/Riesz%E2%80%93Thorin_theorem" title="Riesz–Thorin theorem">Riesz–Thorin interpolation theorem</a>. For <i>p</i>&#160;=&#160;1 and infinity,  the result is not true. The construction of an example of divergence in  <i>L</i><sup>1</sup> was first done by <a href="/wiki/Andrey_Kolmogorov" title="Andrey Kolmogorov">Andrey Kolmogorov</a> (see below). For infinity, the result is a corollary of the <a href="/wiki/Uniform_boundedness_principle" title="Uniform boundedness principle">uniform boundedness principle</a>.
+</p><p>If the partial summation operator <i>S<sub>N</sub></i> is replaced by a suitable <a href="/wiki/Summability_kernel" title="Summability kernel">summability kernel</a> (for example the <i>Fejér sum</i> obtained by convolution with the <a href="/wiki/Fej%C3%A9r_kernel" title="Fejér kernel">Fejér kernel</a>), basic functional analytic techniques can be applied to show that norm convergence holds for&#160;1&#160;≤&#160;<i>p</i>&#160;&lt;&#160;∞.
+</p>
+<h2><span class="mw-headline" id="Convergence_almost_everywhere">Convergence almost everywhere</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=7" title="Edit section: Convergence almost everywhere">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The problem whether the Fourier series of any continuous function converges <a href="/wiki/Almost_everywhere" title="Almost everywhere">almost everywhere</a> was posed by <a href="/wiki/Nikolai_Lusin" class="mw-redirect" title="Nikolai Lusin">Nikolai Lusin</a> in the 1920s.
+It was resolved positively in 1966 by <a href="/wiki/Lennart_Carleson" title="Lennart Carleson">Lennart Carleson</a>. His result, now known as <a href="/wiki/Carleson%27s_theorem" title="Carleson&#39;s theorem">Carleson's theorem</a>, tells the Fourier expansion of any function in <i>L</i><sup>2</sup> converges almost everywhere. Later on, <a href="/wiki/Richard_Hunt_(mathematician)" class="mw-redirect" title="Richard Hunt (mathematician)">Richard Hunt</a> generalized this to <i>L</i><sup><i>p</i></sup> for any <i>p</i>&#160;&gt; 1.
+</p><p>Contrariwise, <a href="/wiki/Andrey_Kolmogorov" title="Andrey Kolmogorov">Andrey Kolmogorov</a>, as a student at the age of 19, in his very first scientific work, constructed an example of a function in <i>L</i><sup>1</sup> whose Fourier series diverges almost everywhere (later improved to diverge everywhere).
+</p><p><a href="/wiki/Jean-Pierre_Kahane" title="Jean-Pierre Kahane">Jean-Pierre Kahane</a> and <a href="/wiki/Yitzhak_Katznelson_(mathematician)" class="mw-redirect" title="Yitzhak Katznelson (mathematician)">Yitzhak Katznelson</a> proved that for any given set <i>E</i> of <a href="/wiki/Measure_(mathematics)" title="Measure (mathematics)">measure</a> zero, there exists a continuous function <i>ƒ</i> such that the Fourier series of <i>ƒ</i> fails to converge on any point
+of <i>E</i>.
+</p>
+<h2><span class="mw-headline" id="Summability">Summability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=8" title="Edit section: Summability">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Does the sequence 0,1,0,1,0,1,... (the partial sums of <a href="/wiki/Grandi%27s_series" title="Grandi&#39;s series">Grandi's series</a>) converge to ½? This does not seem like a very unreasonable generalization of the notion of convergence. Hence we say that any sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/790f9209748c2dca7ed7b81932c37c02af1dbc31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="a_{n}"></span> is <a href="/wiki/Ces%C3%A0ro_mean" class="mw-redirect" title="Cesàro mean">Cesàro summable</a> to some <i>a</i> if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{n\to \infty }{\frac {1}{n}}\sum _{k=1}^{n}a_{k}=a.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }{\frac {1}{n}}\sum _{k=1}^{n}a_{k}=a.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/840a95c2710b217a5d36b8307c9eaba4d5056851" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:18.313ex; height:6.843ex;" alt="\lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^n a_k=a."></span></dd></dl>
+<p>It is not difficult to see that if a sequence converges to some <i>a</i> then it is also <a href="/wiki/Ces%C3%A0ro_mean" class="mw-redirect" title="Cesàro mean">Cesàro summable</a> to it.
+</p><p>To discuss summability of Fourier series, we must replace <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aca805f5a6c6548a825d119230ab751152321ff1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.116ex; height:2.509ex;" alt="S_N"></span> with an appropriate notion. Hence we define
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K_{N}(f;t)={\frac {1}{N}}\sum _{n=0}^{N-1}S_{n}(f;t),\quad N\geq 1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>N</mi>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mspace width="1em" />
+        <mi>N</mi>
+        <mo>&#x2265;<!-- ≥ --></mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{N}(f;t)={\frac {1}{N}}\sum _{n=0}^{N-1}S_{n}(f;t),\quad N\geq 1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f99662b253ad0ba681cba1d5f06002fb62aab60d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:36.891ex; height:7.343ex;" alt="K_N(f;t)=\frac{1}{N}\sum_{n=0}^{N-1} S_n(f;t), \quad N \ge 1,"></span></dd></dl>
+<p>and ask: does <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K_{N}(f)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{N}(f)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ba50898e3020251dd7c474b32dfcd62cf9193a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.752ex; height:2.843ex;" alt="K_N(f)"></span> converge to <i>f</i>? <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K_{N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee77c2ace557230922c1fc6083662b7404916a47" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.664ex; height:2.509ex;" alt="K_N "></span> is no longer
+associated with Dirichlet's kernel, but with <a href="/wiki/Fej%C3%A9r_kernel" title="Fejér kernel">Fejér's kernel</a>, namely
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K_{N}(f)=f*F_{N}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{N}(f)=f*F_{N}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9fb3f17ecda0fbdf5eeb119bc666aab7c8c30ec0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.897ex; height:2.843ex;" alt="K_N(f)=f*F_N\,"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{N}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{N}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/959e74712cc90af2609757b96e01231f42a28aa3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.186ex; height:2.509ex;" alt="F_{N}"></span> is Fejér's kernel,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{N}={\frac {1}{N}}\sum _{n=0}^{N-1}D_{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>N</mi>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{N}={\frac {1}{N}}\sum _{n=0}^{N-1}D_{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fef9ea31aacf8bf1d14ead14328a83d096d647f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:17.308ex; height:7.343ex;" alt="F_N=\frac{1}{N}\sum_{n=0}^{N-1} D_n."></span></dd></dl>
+<p>The main difference is that Fejér's kernel is a positive kernel. <a href="/wiki/Fej%C3%A9r%27s_theorem" title="Fejér&#39;s theorem">Fejér's theorem</a> states that the above sequence of partial sums converge uniformly to <i>ƒ</i>. This implies much better convergence properties
+</p>
+<ul><li>If <i>ƒ</i> is continuous at <i>t</i> then the Fourier series of <i>ƒ</i> is summable at <i>t</i> to <i>ƒ</i>(<i>t</i>). If <i>ƒ</i> is continuous, its Fourier series is uniformly summable (i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K_{N}f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{N}f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c5ce824d5a41ee60b7ffde657cc54d1add1902a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.943ex; height:2.509ex;" alt="K_N f"></span> converges uniformly to <i>ƒ</i>).</li>
+<li>For any integrable <i>ƒ</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K_{N}f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{N}f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c5ce824d5a41ee60b7ffde657cc54d1add1902a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.943ex; height:2.509ex;" alt="K_N f"></span> converges to <i>ƒ</i> in the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L^{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L^{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74c288d1089f1ec85b01b4de25c441fc792bd2d9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.637ex; height:2.676ex;" alt="L^{1}"></span> norm.</li>
+<li>There is no Gibbs phenomenon.</li></ul>
+<p>Results about summability can also imply results about regular convergence. For example, we learn that if <i>ƒ</i> is continuous at <i>t</i>, then the Fourier series of <i>ƒ</i> cannot converge to a value different from <i>ƒ</i>(<i>t</i>). It may either converge to <i>ƒ</i>(<i>t</i>) or diverge. This is because, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}(f;t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}(f;t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22805310733764fa36911ca0da8554ecfe8526e9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.078ex; height:2.843ex;" alt="S_N(f;t)"></span> converges to some value <i>x</i>, it is also summable to it, so from the first summability property above, <i>x</i>&#160;= <i>ƒ</i>(<i>t</i>).
+</p>
+<h2><span class="mw-headline" id="Order_of_growth">Order of growth</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=9" title="Edit section: Order of growth">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The order of growth of Dirichlet's kernel is logarithmic, i.e.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int |D_{N}(t)|\,\mathrm {d} t={\frac {4}{\pi ^{2}}}\log N+O(1).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x222B;<!-- ∫ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>4</mn>
+            <msup>
+              <mi>&#x03C0;<!-- π --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>N</mi>
+        <mo>+</mo>
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int |D_{N}(t)|\,\mathrm {d} t={\frac {4}{\pi ^{2}}}\log N+O(1).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfb7227040ea014b35a6660b97e4d449e601a6ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:33.023ex; height:5.676ex;" alt="{\displaystyle \int |D_{N}(t)|\,\mathrm {d} t={\frac {4}{\pi ^{2}}}\log N+O(1).}"></span></dd></dl>
+<p>See <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a> for the notation <i>O</i>(1). The actual value <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 4/\pi ^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>&#x03C0;<!-- π --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4/\pi ^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec8a5dccc2d6fa5c92e192ca1c2c175b26315185" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.713ex; height:3.176ex;" alt="4/\pi^2"></span> is both difficult to calculate (see Zygmund 8.3) and of almost no use. The fact that for <i>some</i> constant <i>c</i> we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int |D_{N}(t)|\,\mathrm {d} t&gt;c\log N+O(1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x222B;<!-- ∫ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">d</mi>
+        </mrow>
+        <mi>t</mi>
+        <mo>&gt;</mo>
+        <mi>c</mi>
+        <mi>log</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>N</mi>
+        <mo>+</mo>
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int |D_{N}(t)|\,\mathrm {d} t&gt;c\log N+O(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6b27a0d52d245a9babb8cc78538cdcd6f67b49b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:30.159ex; height:5.676ex;" alt="{\displaystyle \int |D_{N}(t)|\,\mathrm {d} t&gt;c\log N+O(1)}"></span></dd></dl>
+<p>is quite clear when one examines the graph of Dirichlet's kernel. The integral over the <i>n</i>-th peak is bigger than <i>c</i>/<i>n</i> and therefore the estimate for the <a href="/wiki/Harmonic_series_(mathematics)" title="Harmonic series (mathematics)">harmonic sum</a> gives the logarithmic estimate.
+</p><p>This estimate entails quantitative versions of some of the previous results. For any continuous function <i>f</i> and any <i>t</i> one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lim _{N\to \infty }{\frac {S_{N}(f;t)}{\log N}}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>N</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo>;</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>log</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>N</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{N\to \infty }{\frac {S_{N}(f;t)}{\log N}}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51908cc17ba7d40b3e5ffc6c8c34eb0eddd5f751" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:18.954ex; height:6.176ex;" alt="\lim_{N\to\infty} \frac{S_N(f;t)}{\log N}=0."></span></dd></dl>
+<p>However, for any order of growth ω(<i>n</i>) smaller than log, this no longer holds and it is possible to find a continuous function <i>f</i> such that for some <i>t</i>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varlimsup _{N\to \infty }{\frac {S_{N}(f;t)}{\omega (N)}}=\infty .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <mover>
+              <mi>lim</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>N</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo>;</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>&#x03C9;<!-- ω --></mi>
+              <mo stretchy="false">(</mo>
+              <mi>N</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varlimsup _{N\to \infty }{\frac {S_{N}(f;t)}{\omega (N)}}=\infty .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/99e3623064fa1197e21da2d620d0ea669139b153" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:20.116ex; height:6.509ex;" alt="\varlimsup_{N\to\infty} \frac{S_N(f;t)}{\omega(N)}=\infty."></span></dd></dl>
+<p>The equivalent problem for divergence everywhere is open. Sergei Konyagin managed to construct an integrable function such that for <i>every t</i> one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \varlimsup _{N\to \infty }{\frac {S_{N}(f;t)}{\sqrt {\log N}}}=\infty .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <mover>
+              <mi>lim</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo stretchy="false">&#x2192;<!-- → --></mo>
+            <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>N</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo>;</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msqrt>
+              <mi>log</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mi>N</mi>
+            </msqrt>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varlimsup _{N\to \infty }{\frac {S_{N}(f;t)}{\sqrt {\log N}}}=\infty .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3f7a2bb5deab8265947aa9c527b269f1831403e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:20.116ex; height:7.009ex;" alt="\varlimsup_{N\to\infty} \frac{S_N(f;t)}{\sqrt{\log N}}=\infty."></span></dd></dl>
+<p>It is not known whether this example is best possible. The only bound from the other direction known is log <i>n</i>.
+</p>
+<h2><span class="mw-headline" id="Multiple_dimensions">Multiple dimensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=10" title="Edit section: Multiple dimensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Upon examining the equivalent problem in more than one dimension, it is necessary to specify the precise order of summation one uses. For example, in two dimensions, one may define
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{N}(f;t_{1},t_{2})=\sum _{|n_{1}|\leq N,|n_{2}|\leq N}{\widehat {f}}(n_{1},n_{2})e^{i(n_{1}t_{1}+n_{2}t_{2})}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mo>&#x2264;<!-- ≤ --></mo>
+            <mi>N</mi>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mo>&#x2264;<!-- ≤ --></mo>
+            <mi>N</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>f</mi>
+              <mo>&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{N}(f;t_{1},t_{2})=\sum _{|n_{1}|\leq N,|n_{2}|\leq N}{\widehat {f}}(n_{1},n_{2})e^{i(n_{1}t_{1}+n_{2}t_{2})}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e6f38674620e40c83886d74e307ca9afb6dfb9b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:47.383ex; height:6.176ex;" alt="S_N(f;t_1,t_2)=\sum_{|n_1|\leq N,|n_2|\leq N}\widehat{f}(n_1,n_2)e^{i(n_1 t_1+n_2 t_2)}"></span></dd></dl>
+<p>which are known as "square partial sums". Replacing the sum above with
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \sum _{n_{1}^{2}+n_{2}^{2}\leq N^{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msubsup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>+</mo>
+            <msubsup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>&#x2264;<!-- ≤ --></mo>
+            <msup>
+              <mi>N</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </munder>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n_{1}^{2}+n_{2}^{2}\leq N^{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9bb9eeb323e4dc6a1dc1acd87bb9b792113e142d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:8.525ex; height:6.509ex;" alt="\sum_{n_1^2+n_2^2\leq N^2}"></span></dd></dl>
+<p>lead to "circular partial sums". The difference between these two definitions is quite notable. For example, the norm of the corresponding Dirichlet kernel for square partial sums is of the order of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \log ^{2}N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/053aa292ad87c07d53518a7c1669d0ef04579802" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.477ex; height:3.009ex;" alt="\log^2 N"></span> while for circular partial sums it is of the order of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\sqrt {N}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>N</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {N}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b3d8948b2c154ccc7f7523b035ae7e254e04190" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.999ex; height:3.009ex;" alt="\sqrt{N}"></span>.
+</p><p>Many of the results true for one dimension are wrong or unknown in multiple dimensions. In particular, the equivalent of Carleson's theorem is still open for circular partial sums. Almost everywhere convergence of "square partial sums" (as well as more general polygonal partial sums) in multiple dimensions was established around 1970 by <a href="/wiki/Charles_Fefferman" title="Charles Fefferman">Charles Fefferman</a>.
+</p>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=11" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1133582631">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFGourdon2009" class="citation book cs1 cs1-prop-foreign-lang-source">Gourdon, Xavier (2009). <i>Les maths en tête. Analyse (2ème édition)</i> (in French). Ellipses. p.&#160;264. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-2729837594" title="Special:BookSources/978-2729837594"><bdi>978-2729837594</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Les+maths+en+t%C3%AAte.+Analyse+%282%C3%A8me+%C3%A9dition%29&amp;rft.pages=264&amp;rft.pub=Ellipses&amp;rft.date=2009&amp;rft.isbn=978-2729837594&amp;rft.aulast=Gourdon&amp;rft.aufirst=Xavier&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConvergence+of+Fourier+series" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Jackson (1930), p21ff.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Stromberg (1981), Exercise 6 (d) on p.&#160;519 and Exercise 7 (c) on p.&#160;520.</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Textbooks">Textbooks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=13" title="Edit section: Textbooks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li>Dunham Jackson <i>The theory of Approximation</i>, AMS Colloquium Publication Volume XI,  New York 1930.</li>
+<li>Nina K. Bary, <i>A treatise on trigonometric series</i>, Vols. I, II. Authorized translation by Margaret F. Mullins. A Pergamon Press Book. The Macmillan Co., New York 1964.</li>
+<li>Antoni Zygmund, <i><a href="/wiki/Trigonometric_series" title="Trigonometric series">Trigonometric series</a></i>, Vol. I, II. Third edition. With a foreword by Robert A. Fefferman. Cambridge Mathematical Library. Cambridge University Press, Cambridge, 2002. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-89053-5" title="Special:BookSources/0-521-89053-5">0-521-89053-5</a></li>
+<li>Yitzhak Katznelson, <i>An introduction to harmonic analysis</i>, Third edition. Cambridge University Press, Cambridge, 2004. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-54359-2" title="Special:BookSources/0-521-54359-2">0-521-54359-2</a></li>
+<li>Karl R. Stromberg, <i>Introduction to classical analysis</i>, Wadsworth International Group, 1981. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-98012-0" title="Special:BookSources/0-534-98012-0">0-534-98012-0</a></li></ul>
+<dl><dd><i>The Katznelson book is the one using the most modern terminology and style of the three. The original publishing dates are: Zygmund in 1935, Bari in 1961 and Katznelson in 1968. Zygmund's book was greatly expanded in its second publishing in 1959, however.</i></dd></dl>
+<h3><span class="mw-headline" id="Articles_referred_to_in_the_text">Articles referred to in the text</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Convergence_of_Fourier_series&amp;action=edit&amp;section=14" title="Edit section: Articles referred to in the text">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><a href="/wiki/Paul_du_Bois-Reymond" title="Paul du Bois-Reymond">Paul du Bois-Reymond</a>, "Ueber die Fourierschen Reihen", <i>Nachr. Kön. Ges. Wiss. Göttingen</i> <b>21</b> (1873), 571–582.</li></ul>
+<dl><dd>This is the first proof that the Fourier series of a continuous function might diverge. In German</dd></dl>
+<ul><li><a href="/wiki/Andrey_Nikolaevich_Kolmogorov" class="mw-redirect" title="Andrey Nikolaevich Kolmogorov">Andrey Kolmogorov</a>, "Une série de Fourier–Lebesgue divergente presque partout", <i><a href="/wiki/Fundamenta_Mathematicae" title="Fundamenta Mathematicae">Fundamenta Mathematicae</a></i> 4 (1923), 324–328.</li>
+<li>Andrey Kolmogorov, "Une série de Fourier–Lebesgue divergente partout", <i><a href="/wiki/C._R._Acad._Sci._Paris" class="mw-redirect" title="C. R. Acad. Sci. Paris">C. R. Acad. Sci. Paris</a></i> <b>183</b> (1926), 1327–1328</li></ul>
+<dl><dd>The first is a construction of an integrable function whose Fourier series diverges almost everywhere. The second is a strengthening to divergence everywhere. In French.</dd></dl>
+<ul><li><a href="/wiki/Lennart_Carleson" title="Lennart Carleson">Lennart Carleson</a>, "On convergence and growth of partial sums of Fourier series", <i><a href="/wiki/Acta_Math." class="mw-redirect" title="Acta Math.">Acta Math.</a></i> <b>116</b> (1966) 135–157.</li>
+<li><a href="/wiki/Richard_Hunt_(mathematician)" class="mw-redirect" title="Richard Hunt (mathematician)">Richard A. Hunt</a>, "On the convergence of Fourier series", Orthogonal Expansions and their Continuous Analogues (Proc. Conf., Edwardsville, Ill., 1967), 235–255. Southern Illinois Univ. Press, Carbondale, Ill.</li>
+<li><a href="/wiki/Charles_Louis_Fefferman" class="mw-redirect" title="Charles Louis Fefferman">Charles Louis Fefferman</a>, "Pointwise convergence of Fourier series", <i><a href="/wiki/Ann._of_Math." class="mw-redirect" title="Ann. of Math.">Ann. of Math.</a></i> <b>98</b> (1973), 551–571.</li>
+<li><a href="/wiki/Michael_Lacey_(mathematician)" title="Michael Lacey (mathematician)">Michael Lacey</a> and <a href="/wiki/Christoph_Thiele" title="Christoph Thiele">Christoph Thiele</a>, "A proof of boundedness of the Carleson operator", <i>Math. Res. Lett.</i> <b>7:4</b> (2000), 361–370.</li>
+<li>Ole G. Jørsboe and Leif Mejlbro, <i>The Carleson–Hunt theorem on Fourier series</i>. <a href="/wiki/Lecture_Notes_in_Mathematics" title="Lecture Notes in Mathematics">Lecture Notes in Mathematics</a> 911, Springer-Verlag, Berlin-New York, 1982. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-540-11198-0" title="Special:BookSources/3-540-11198-0">3-540-11198-0</a></li></ul>
+<dl><dd>This is the original paper of Carleson, where he proves that the Fourier expansion of any continuous function converges almost everywhere; the paper of Hunt where he generalizes it to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle L^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cf2317aaca1ecee4b8ccf667bc1001059eae5850" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.642ex; height:2.343ex;" alt="L^{p}"></span> spaces; two attempts at simplifying the proof; and a book that gives a self contained exposition of it.</dd></dl>
+<ul><li><a href="/wiki/Dunham_Jackson" title="Dunham Jackson">Dunham Jackson</a>, <i>Fourier Series and Orthogonal Polynomials</i>, 1963</li>
+<li>D. J. Newman,  "A simple proof of Wiener's 1/f theorem",  Proc. Amer. Math. Soc.  <b>48</b>  (1975), 264–265.</li>
+<li><a href="/wiki/Jean-Pierre_Kahane" title="Jean-Pierre Kahane">Jean-Pierre Kahane</a> and <a href="/wiki/Yitzhak_Katznelson" title="Yitzhak Katznelson">Yitzhak Katznelson</a>, "Sur les ensembles de divergence des séries trigonométriques", <i><a href="/wiki/Studia_Math." class="mw-redirect" title="Studia Math.">Studia Math.</a></i> <b>26</b> (1966), 305–306</li></ul>
+<dl><dd>In this paper the authors show that for any set of zero measure there exists a continuous function on the circle whose Fourier series diverges on that set. In French.</dd></dl>
+<ul><li><a href="/wiki/Sergei_Vladimirovich_Konyagin" class="mw-redirect" title="Sergei Vladimirovich Konyagin">Sergei Vladimirovich Konyagin</a>, "On divergence of trigonometric Fourier series everywhere", <i>C. R. Acad. Sci. Paris</i> <b>329</b> (1999), 693–697.</li>
+<li>Jean-Pierre Kahane, <i>Some random series of functions</i>, second edition. Cambridge University Press, 1993. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1133582631"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-45602-9" title="Special:BookSources/0-521-45602-9">0-521-45602-9</a></li></ul>
+<dl><dd>The Konyagin paper proves the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\sqrt {\log n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>log</mi>
+            <mo>&#x2061;<!-- ⁡ --></mo>
+            <mi>n</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {\log n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b45585042f73e6f5c3bdbb99dea83d92546d78b4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:7.077ex; height:3.509ex;" alt="\sqrt{\log n}"></span> divergence result discussed above. A simpler proof that gives only log&#160;log&#160;<i>n</i> can be found in Kahane's book.</dd></dl>
+<!-- 
+NewPP limit report
+Parsed by mw1453
+Cached time: 20230622100929
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.255 seconds
+Real time usage: 0.561 seconds
+Preprocessor visited node count: 2052/1000000
+Post‐expand include size: 10727/2097152 bytes
+Template argument size: 2147/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 15241/5000000 bytes
+Lua time usage: 0.074/10.000 seconds
+Lua memory usage: 3455140/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  178.707      1 -total
+ 43.85%   78.364      1 Template:Reflist
+ 36.33%   64.922      1 Template:Cite_book
+ 25.72%   45.958      2 Template:Citation_needed
+ 22.18%   39.646      2 Template:Fix
+ 17.29%   30.903      5 Template:ISBN
+ 14.40%   25.728      4 Template:Category_handler
+  9.68%   17.298      5 Template:Catalog_lookup_link
+  9.11%   16.286      1 Template:Closed-closed
+  8.10%   14.476      1 Template:Math
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:927236-0!canonical and timestamp 20230622100928 and revision id 1077409513. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Convergence_of_Fourier_series&amp;oldid=1077409513">https://en.wikipedia.org/w/index.php?title=Convergence_of_Fourier_series&amp;oldid=1077409513</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Fourier_series" title="Category:Fourier series">Fourier series</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_French-language_sources_(fr)" title="Category:CS1 French-language sources (fr)">CS1 French-language sources (fr)</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2011" title="Category:Articles with unsourced statements from February 2011">Articles with unsourced statements from February 2011</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2020" title="Category:Articles with unsourced statements from February 2020">Articles with unsourced statements from February 2020</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 16 March 2022, at 04:48<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License 4.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Convergence_of_Fourier_series&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class='vector-settings'>
+	
+<button
+	id=""
+	class="cdx-button cdx-button--icon-only vector-limited-width-toggle"
+	><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+
+</button>
+
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw1354","wgBackendResponseTime":114,"wgPageParseReport":{"limitreport":{"cputime":"0.255","walltime":"0.561","ppvisitednodes":{"value":2052,"limit":1000000},"postexpandincludesize":{"value":10727,"limit":2097152},"templateargumentsize":{"value":2147,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":15241,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  178.707      1 -total"," 43.85%   78.364      1 Template:Reflist"," 36.33%   64.922      1 Template:Cite_book"," 25.72%   45.958      2 Template:Citation_needed"," 22.18%   39.646      2 Template:Fix"," 17.29%   30.903      5 Template:ISBN"," 14.40%   25.728      4 Template:Category_handler","  9.68%   17.298      5 Template:Catalog_lookup_link","  9.11%   16.286      1 Template:Closed-closed","  8.10%   14.476      1 Template:Math"]},"scribunto":{"limitreport-timeusage":{"value":"0.074","limit":"10.000"},"limitreport-memusage":{"value":3455140,"limit":52428800}},"cachereport":{"origin":"mw1453","timestamp":"20230622100929","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Convergence of Fourier series","url":"https:\/\/en.wikipedia.org\/wiki\/Convergence_of_Fourier_series","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5166386","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5166386","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-08-24T22:26:28Z","dateModified":"2022-03-16T04:48:11Z"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Convergence of Fourier series","url":"https:\/\/en.wikipedia.org\/wiki\/Convergence_of_Fourier_series","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5166386","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5166386","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-08-24T22:26:28Z","dateModified":"2022-03-16T04:48:11Z"}</script>
+</body>
+</html>
